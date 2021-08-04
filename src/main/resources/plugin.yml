@@ -1,0 +1,17 @@
+name: RandomTeleport
+main: hu.szviktor.plugin.Main
+version: 1.0.0-SNAPSHOT
+api-version: 1.16
+authors: ["szviktor"]
+website: https://playerunion.eu
+depend: ["Vault"]
+
+commands:
+  randomteleport:
+    description: "Opens the RandomTeleport menu."
+    aliases: ["rtp"]
+
+permissions:
+  randomteleport.reload:
+    description: Permission to reload the plugin.
+    default: op

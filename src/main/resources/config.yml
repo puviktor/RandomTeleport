@@ -1,0 +1,39 @@
+#Settings of the teleport menu.
+teleportMenu:
+  title: "&7RandomTeleport GUI" #The title of the GUI.
+  size: 9 #The size of the GUI.
+  fillEmptySlots: true #Should we fill the empty slots?
+  fillItem: "GRAY_STAINED_GLASS_PANE" #Only accepts material name.
+  openSound: true #Should we play a sound, when the menu opens?
+  sound: BLOCK_CHEST_OPEN #The sound we will play.
+
+#The teleport tiers.
+teleportTiers:
+  "fistTier": #The ID of the tier.
+    name: "&bFirst Tier" #The name of the tier, which will be shown in the GUI.
+    #The lore of item.
+    lore:
+    - "&7This teleport costs $%cost%"
+    icon: GRASS_BLOCK #The icon of the tier in the GUI.
+    world: "world" #The world for the tier.
+    radiusX: 500 #The maximum X radius of the teleport.
+    radiusZ: 500 #The maximum Z radius of the teleport.
+    cost: 100.0 #The cost of the teleport. Only accepts decimals.
+  "secondTier": #The ID of the tier.
+    name: "&eSecond Tier"
+    lore:
+    - "&7This teleport costs $%cost%"
+    - "&eThis teleport only for donators!"
+    icon: DIAMOND_BLOCK
+    world: "world"
+    radiusX: 5000
+    radiusZ: 5000
+    cost: 1000.0
+
+#The messages of the plugin.
+messages:
+  player_only: "&cThis command is only for players."
+  no_permission: "&cYou don't have permission to do that!"
+  not_enough_money: "&cYou don't have enough money!"
+  reload: "&aConfiguration reloaded!"
+  teleport: "&aTeleporting..."
